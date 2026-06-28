@@ -8,7 +8,7 @@
    ========================================================================== */
 
 /* --- GOOGLE FONTS IMPORT --- */
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
   /* --- COLOR VARIABLES --- */
@@ -117,7 +117,7 @@ button {
 
 /* --- TYPOGRAPHY CLASSES --- */
 .font-display {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .font-mono {
@@ -125,9 +125,16 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Inter', sans-serif;
   line-height: var(--leading-tight);
   color: var(--color-navy);
+}
+
+p {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 /* --- UTILITY CLASSES --- */
