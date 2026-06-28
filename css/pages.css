@@ -1499,8 +1499,11 @@ textarea.form-control {
 }
 
 @media (max-width: 640px) {
-  .home-page {
+  body {
     padding-bottom: 92px;
+  }
+
+  .home-page {
     background: #f5f6fa;
   }
 
@@ -1517,16 +1520,16 @@ textarea.form-control {
     height: 30px;
   }
 
-  .home-page .navbar__brand-text {
+  .navbar__brand-text {
     display: flex;
   }
 
-  .home-page .navbar__school-name {
+  .navbar__school-name {
     font-size: 1.45rem;
     line-height: 1;
   }
 
-  .home-page .navbar__tagline {
+  .navbar__tagline {
     display: none;
   }
 
@@ -1605,46 +1608,12 @@ textarea.form-control {
   }
 
   .home-page .stats-section {
-    margin-top: -224px;
-    padding: 0 var(--space-5) var(--space-20);
-    background: transparent;
-  }
-
-  .home-page .stats-section .container {
-    padding: 0;
-  }
-
-  .home-page .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-2);
-    padding: var(--space-5);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-top: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: var(--radius-lg);
-    background: rgba(255, 255, 255, 0.12);
-    box-shadow: 0 20px 42px rgba(0, 8, 58, 0.36);
-    backdrop-filter: blur(16px);
-  }
-
-  .home-page .stat-card {
-    padding: var(--space-4) var(--space-2);
-    border: none !important;
-  }
-
-  .home-page .stat-card__number {
-    margin-bottom: var(--space-2);
-    color: var(--color-orange);
-    font-size: 1.6rem;
-  }
-
-  .home-page .stat-card__label {
-    color: rgba(255, 255, 255, 0.78);
-    font-size: 0.62rem;
-    letter-spacing: 0.16em;
+    display: none;
   }
 
   .home-page .home-innovation {
-    padding-top: var(--space-20);
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-8);
   }
 
   .home-page .home-innovation__grid {
@@ -1664,15 +1633,7 @@ textarea.form-control {
   }
 
   .home-page .home-innovation__content::after {
-    content: '⌬';
-    position: absolute;
-    right: -16px;
-    bottom: -36px;
-    z-index: 0;
-    color: rgba(15, 23, 51, 0.10);
-    font-size: 12rem;
-    line-height: 1;
-    font-weight: 800;
+    content: none;
   }
 
   .home-page .home-innovation__content > * {
@@ -1704,11 +1665,7 @@ textarea.form-control {
   }
 
   .home-page .home-innovation__media {
-    min-height: 218px;
-    order: 2;
-    border-radius: var(--radius-md);
-    background: var(--color-navy);
-    box-shadow: 0 14px 30px rgba(15, 23, 51, 0.16);
+    display: none;
   }
 
   .home-page .home-innovation__media img,
@@ -1757,7 +1714,7 @@ textarea.form-control {
   }
 
   .home-page .home-infrastructure {
-    padding-top: var(--space-8);
+    padding-top: var(--space-6);
   }
 
   .mobile-bottom-nav {

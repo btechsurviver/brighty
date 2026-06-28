@@ -60,4 +60,10 @@ function initNavbar() {
       link.classList.add('active');
     }
   });
+
+  $$('.mobile-bottom-nav__link').forEach(function (link) {
+    const href = link.getAttribute('href') || '';
+    const linkPage = href.split('#')[0];
+    link.classList.toggle('active', linkPage === currentPage);
+  });
 }
